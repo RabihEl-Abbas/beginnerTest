@@ -4,10 +4,189 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Free Web Tutorials" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="Rabih El-Abbas" />
+    <style>
+      .background {
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <title>codeSTACK</title>
   </head>
   <body>
-    <h1>whatever</h1>
+    <!-- Headings-->
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+    <hr />
+
+    <div>
+      <!--Paragraph Tags-->
+      <p title="This is a Tooltip">
+        Lorem ipsum dolor sit <strong>amet</strong> consectetur <em>elit</em>.
+        Maiores ducimus, vel repellat, inventore facere et illum quos natus
+        pariatur, minus accusamus cupiditate magni. Delectus esse
+        <mark>consequuntur</mark> recusandae vero nesciunt explicabo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit <small>consectetur</small> adipisicing elit.
+        Maiores ducimus, vel repellat, inventore <del>et</del> illum quos natus
+        pariatur,
+        <span style="color: purple">accusamus cupiditate magni.</span> Delectus
+        esse
+        <ins> recusandae </ins>
+        vero nesciunt explicabo!
+      </p>
+      <p class="background">
+        Lorem ipsum dolor sit amet consectetur <sub> elit </sub>. Maiores
+        ducimus, vel repellat, inventore facere et illum quos
+        <sup> pariatur </sup>, minus accusamus cupiditate magni. Delectus esse
+        consequuntur recusandae vero nesciunt explicabo!
+      </p>
+    </div>
+    <br />
+    <a href="#bookmark">
+      <img src="Leona.png" alt="Leona Picture" width="200" />
+    </a>
+
+    <br />
+
+    <a href="https://www.google.ca" target="_blank">Google</a>
+
+    <br />
+    <!-- Bookmarked Paragraphs -->
+    <p id="bookmark">This is a Paragraph</p>
+
+    <ol type="I" start="100">
+      <!--Lists-->
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li>List Item 4</li>
+      <li>List Item 5</li>
+    </ol>
+
+    <br />
+    <hr />
+    <br />
+
+    <!--Tables-->
+    <table>
+      <caption>
+        This is a caption
+      </caption>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rabih</td>
+          <td>El-Abbas</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Mounir</td>
+          <td>El-Abbas</td>
+          <td>24</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Telephone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rabih</td>
+          <td>555-555-5555</td>
+          <td>666-666-6666</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tr>
+        <th>Name:</th>
+        <td>Rabih El-Abbas</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Telephone:</th>
+        <td>555-555-5555</td>
+      </tr>
+      <tr>
+        <td>666-666-6666</td>
+      </tr>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <!--Inputs-->
+    <form action="server.php">
+      <fieldset>
+        <legend>Personal Information</legend>
+        First Name:
+
+        <br />
+
+        <input
+          type="text"
+          name="firstname"
+          value=""
+          placeholder="First Name Here"
+        />
+
+        <br />
+
+        Last Name: <br />
+        <input
+          type="text name=lastname"
+          value=""
+          placeholder="Last Name Here"
+        />
+
+        <br /><br />
+
+        <input type="radio" name="options" /> Option 1
+        <input type="radio" name="options" /> Option 2
+
+        <br /><br />
+
+        <input type="checkbox" name="checkbox" checked /> Checkbox 1
+        <input type="checkbox" name="checkbox" /> Checkbox 2
+        <input type="checkbox" name="checkbox" /> Checkbox 3
+
+        <br /><br />
+
+        <label for="carSelect">Select:</label>
+
+        <select name="cars" id="carSelect" multiple>
+          <option value="BMW" selected>BMW</option>
+          <option value="Volvo">Volvo</option>
+          <option value="Audi">Audi</option>
+        </select>
+
+        <br /><br />
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <button>Click Me</button>
   </body>
 </html>
